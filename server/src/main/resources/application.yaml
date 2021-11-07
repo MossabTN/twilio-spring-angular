@@ -1,0 +1,7 @@
+server:
+  port: 6600
+twilio:
+  account-sid: <account-sid>
+  #auth-token: <auth-token>
+  api-key: <api-key>
+  api-secret: <api-secret>
