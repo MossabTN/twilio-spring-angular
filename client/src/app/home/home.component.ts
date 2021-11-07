@@ -82,7 +82,6 @@ export class HomeComponent implements OnInit {
             this.camera.finalizePreview();
 
             const tracks = await Promise.all([
-                createLocalVideoTrack(),
                 createLocalAudioTrack(),
                 this.settings.showPreviewCamera()
             ]);

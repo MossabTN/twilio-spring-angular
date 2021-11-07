@@ -43,7 +43,9 @@ export class RoomsComponent implements OnInit, OnDestroy {
         }
     }
 
-    onAddRoom(roomName: string) {
+    async onAddRoom(roomName: string) {
+        await this.videoChatService.createRoom(roomName);
+        await this.updateRooms();
         this.roomName = null;
         this.roomChanged.emit(roomName);
     }
